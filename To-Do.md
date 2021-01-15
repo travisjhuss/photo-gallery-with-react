@@ -4,10 +4,10 @@ To Do List for React-Gallery
 Set-Up
 [x] - npm install
 [x] - npm install axios
-[ ] - add photos to public/images folder
-[ ] - add photo data to gallery.data.js
-[ ] - gallery list component and css
-[ ] - gallery item component and css
+[x] - add photos to public/images folder
+[x] - add photo data to gallery.data.js
+[x] - gallery list component and css
+[x] - gallery item component and css
 
 App
 [ ] - import axios

@@ -3,7 +3,8 @@ import './GalleryList.css';
 
 function GalleryList({ 
     photoList,
-    addLike
+    addLike,
+    deletePhoto
 }) {
 
     console.log('In GalleryList, photoList:', photoList);
@@ -17,6 +18,7 @@ function GalleryList({
                         key={photo.id}
                         photo={photo}
                         addLike={addLike}
+                        deletePhoto={deletePhoto}
                     />
                 ))}
             </div>

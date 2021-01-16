@@ -18,12 +18,13 @@ function App() {
     axios.get('/gallery')
       .then((response) => {
         console.log('Photo Gallery:', response.data);
-        
+        setPhotoList(response.data)
       }).catch((error) => {
         console.log('Error in GET', error);
       });
   } // end getPhotos
 
+  console.log('photoList:', photoList);
   return (
     <div className="App">
       <header className="App-header">

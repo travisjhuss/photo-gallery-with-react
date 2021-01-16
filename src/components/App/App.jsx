@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
+import GalleryForm from '../GalleryForm/GalleryForm';
 import './App.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Morton J. Huss, a Gallery</h1>
       </header>
+      <GalleryForm />
       <GalleryList
         photoList={photoList}
         addLike={addLike}

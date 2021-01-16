@@ -35,9 +35,9 @@ STRETCH GOALS
     [x] - name your database react_gallery
     [x] - include a database.sql file documenting your database tables
     [x] - npm install pg
-[ ] - Add a form (new component) that allows a user to POST a new gallery item
-    [ ] - Client side form (use absolute URL for images)
-    [ ] - Server side route for posting an image
+[x] - Add a form (new component) that allows a user to POST a new gallery item
+    [x] - Client side form (use absolute URL for images)
+    [x] - Server side route for posting an image
 [ ] - Ability to delete a gallery item
 [ ] - Add styling with Material-UI
 [ ] - Implement uppy for image upload

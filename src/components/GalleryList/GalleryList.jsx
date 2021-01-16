@@ -10,7 +10,7 @@ function GalleryList({
 
     return (
         <>
-            <h2>A Boy's Life</h2>
+            <h2>Morton J. Huss</h2>
             <div className="container">
                 {photoList.map(photo => (
                     <GalleryItem

@@ -29,7 +29,6 @@ function App() {
   const addLike = (id) => {
     axios.put(`/gallery/like/${id}`)
       .then((response) => {
-        console.log('clicked Like');
         getPhotos();
       }).catch((err) => {
         console.log('Error in Like PUT:', err);

@@ -10,3 +10,7 @@ img {
     width:400px;
     object-fit: contain;
 }
+
+.photoBox {
+    height: 400px;
+}

@@ -24,9 +24,9 @@ GalleryList
 
 GalleryItem
 [ ] - Swap the image with the description on click. Use conditional rendering
-[ ] - Display the number likes for each item and include a like button
-[ ] - When the like button is clicked, use Axios to update (PUT) the like count /gallery/like/:id
-[ ] - Update the gallery each time a like button is clicked.
+[x] - Display the number likes for each item and include a like button
+[x] - When the like button is clicked, use Axios to update (PUT) the like count /gallery/like/:id
+[x] - Update the gallery each time a like button is clicked.
 
 
 STRETCH GOALS

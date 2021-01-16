@@ -1,5 +1,3 @@
-import GalleryList from "../GalleryList/GalleryList";
-
 import './GalleryForm.css';
 
 function GalleryForm({

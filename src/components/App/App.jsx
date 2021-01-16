@@ -41,7 +41,7 @@ function App() {
   // POST for adding photo
   const addPhoto = (evt) => {
     evt.preventDefault();
-    axios.post('/list', {
+    axios.post('/gallery', {
         path: photoPath,
         description: photoDescription
     }).then((response) => {

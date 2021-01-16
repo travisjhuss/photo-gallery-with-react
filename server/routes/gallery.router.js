@@ -27,7 +27,7 @@ router.get('/', (req, res) => {
     const sqlText = `SELECT * FROM "gallery" ORDER BY "id" ASC;`;
     pool.query(sqlText)
         .then((result) => {
-            console.log('from db', result.rows);
+            // console.log('from db', result.rows);
             res.send(result.rows);
         })
         .catch((err) => {
@@ -64,14 +64,14 @@ router.post('/', (req, res) => {
 
     const sqlText = `INSERT INTO "gallery" ("path", "description") VALUES ($1, $2);`;
     
-    // pool.query(sqlText, [req.body.name, req.body.quantity, req.body.unit])
-    //     .then((result => {
-    //         console.log(`POST SUCCESSFUL`);
-    //         res.sendStatus(200);
-    //     })).catch((err) => {
-    //         console.log(`ERROR: ${err}`);
-    //         res.sendStatus(500);
-    //     });
+    pool.query(sqlText, [req.body.path, req.body.description])
+        .then((result => {
+            console.log(`POST SUCCESSFUL`);
+            res.sendStatus(200);
+        })).catch((err) => {
+            console.log(`ERROR: ${err}`);
+            res.sendStatus(500);
+        });
 });
 
 module.exports = router;

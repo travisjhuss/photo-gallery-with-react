@@ -3,7 +3,8 @@ import './GalleryItem.css';
 
 function GalleryItem({
     photo,
-    addLike
+    addLike,
+    deletePhoto
 }) {
     const [descriptionDisplayed, setDescriptionDisplayed] = useState(true);
 
@@ -33,6 +34,7 @@ function GalleryItem({
                 <div>
                     {photo.likes}
                 </div>
+                <button onClick={() => deletePhoto(photo.id)}>Delete</button>
             </div>
         </>
     )

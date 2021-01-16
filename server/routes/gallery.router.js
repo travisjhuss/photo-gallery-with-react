@@ -39,10 +39,8 @@ router.get('/', (req, res) => {
 
 // PUT route for database
 router.put('/like/:id', (req, res) => {
-    console.log(req.params);
     const galleryId = req.params.id;
     console.log('Delete route with id of', galleryId);
-
     const query = `
         UPDATE "gallery" 
         SET "likes" = "likes" + 1
@@ -61,7 +59,6 @@ router.put('/like/:id', (req, res) => {
 // POST route for adding photo to DB
 router.post('/', (req, res) => {
     console.log(`POST req.body: ${req.body}`);
-
     const sqlText = `INSERT INTO "gallery" ("path", "description") VALUES ($1, $2);`;
     
     pool.query(sqlText, [req.body.path, req.body.description])
@@ -72,6 +69,21 @@ router.post('/', (req, res) => {
             console.log(`ERROR: ${err}`);
             res.sendStatus(500);
         });
+});
+
+// DELETE route
+router.delete('/:id', (req, res) => {
+    const id = req.params.id;
+    console.log('Delete ID of', id);
+    const sqlText = `DELETE FROM "gallery" WHERE "id" = $1;`;
+
+    pool.query(sqlText, [id])
+        .then((result) => {
+            res.sendStatus(204);
+        }).catch((error) => {
+            console.log('error');
+            res.sendStatus(500);
+        })
 });
 
 module.exports = router;

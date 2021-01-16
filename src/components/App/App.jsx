@@ -54,6 +54,19 @@ function App() {
     })
   } // end addPhoto
 
+  const deletePhoto = (id) => {
+    console.log('clicked delete');
+    console.log('id:', id);
+
+    axios.delete(`/gallery/${id}`)
+        .then((response) => {
+            console.log(response);
+            getPhotos();
+        }).catch((err) => {
+            console.log(err);
+        })
+  } // end deletePhoto
+
   console.log('photoList:', photoList);
   return (
     <div className="App">
@@ -70,6 +83,7 @@ function App() {
       <GalleryList
         photoList={photoList}
         addLike={addLike}
+        deletePhoto={deletePhoto}
       />
     </div>
   );

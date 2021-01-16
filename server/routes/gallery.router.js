@@ -58,4 +58,20 @@ router.put('/like/:id', (req, res) => {
         })
 });
 
+// POST route for adding photo to DB
+router.post('/', (req, res) => {
+    console.log(`POST req.body: ${req.body}`);
+
+    const sqlText = `INSERT INTO "gallery" ("path", "description") VALUES ($1, $2);`;
+    
+    // pool.query(sqlText, [req.body.name, req.body.quantity, req.body.unit])
+    //     .then((result => {
+    //         console.log(`POST SUCCESSFUL`);
+    //         res.sendStatus(200);
+    //     })).catch((err) => {
+    //         console.log(`ERROR: ${err}`);
+    //         res.sendStatus(500);
+    //     });
+});
+
 module.exports = router;

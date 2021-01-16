@@ -1,0 +1,28 @@
+.input-form {
+    display: inline-grid;
+    grid-template-columns: 350px 2fr 2fr 1fr;
+    column-gap: 10px;
+    align-items: end;
+    justify-items: stretch;
+    justify-content: center;
+    align-content: end;
+    color: white;
+    background-color: #3f50b5;
+
+}
+
+#submit-btn {
+    margin-bottom: 4px;
+    padding: 8px;
+    width: 125px;
+    height: 47px;
+}
+
+#url-input {
+    color: white;
+}
+
+#description-input {
+    color: white;
+}
+

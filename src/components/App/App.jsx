@@ -31,7 +31,9 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Morton J. Huss, a Gallery</h1>
       </header>
-      <GalleryList />
+      <GalleryList 
+        photoList={photoList}
+        />
       <img src="images/withStick.jpg" height="200" width="200"/>
     </div>
   );

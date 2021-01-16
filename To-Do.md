@@ -40,6 +40,8 @@ STRETCH GOALS
     [x] - Server side route for posting an image
 [x] - Ability to delete a gallery item
 [ ] - Add styling with Material-UI
+    [ ] - npm install @material-ui/core
+    [ ] - npm install @material-ui/icons
 [ ] - Implement uppy for image upload
 
 NOTE: The above stretch goals are intended to be completed in order.

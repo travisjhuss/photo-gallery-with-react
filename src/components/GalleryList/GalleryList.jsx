@@ -1,7 +1,10 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
 import './GalleryList.css';
 
-function GalleryList({ photoList }) {
+function GalleryList({ 
+    photoList,
+    addLike
+}) {
 
     console.log('In GalleryList, photoList:', photoList);
 
@@ -13,6 +16,7 @@ function GalleryList({ photoList }) {
                     <GalleryItem
                         key={photo.id}
                         photo={photo}
+                        addLike={addLike}
                     />
                 ))}
             </div>

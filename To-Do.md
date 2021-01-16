@@ -31,7 +31,7 @@ GalleryItem
 
 STRETCH GOALS
 [ ] - Use Git Branching for each feature 
-[ ] - Move the data into a database (postgresql)
+[x] - Move the data into a database (postgresql)
     [x] - name your database react_gallery
     [x] - include a database.sql file documenting your database tables
     [x] - npm install pg

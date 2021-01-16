@@ -1,8 +1,14 @@
+import './GalleryItem.css';
+
 function GalleryItem({ photo }) {
 
     return (
         <>
-            <p>id: {photo.id} URL: {photo.path} description: {photo.description} likes:{photo.likes} </p>
+            <div className="gridItem">
+                <img src={photo.path} />
+                <p>{photo.description}</p>
+                <p>Likes:{photo.likes}</p>
+            </div>
         </>
     )
 } // end GalleryItem

@@ -34,7 +34,6 @@ function App() {
       <GalleryList 
         photoList={photoList}
         />
-      <img src="images/withStick.jpg" height="200" width="200"/>
     </div>
   );
 }

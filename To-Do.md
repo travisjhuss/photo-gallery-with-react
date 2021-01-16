@@ -11,15 +11,15 @@ Set-Up
 
 App
 [x] - import axios, useState, useEffect
-[ ] - axios.get gallery data
-[ ] - pass data to List component
-[ ] - import GalleryList
+[x] - axios.get gallery data
+[x] - pass data to List component
+[x] - import GalleryList
 
 
 GalleryList
-[ ] - loop over data, make items
-[ ] - pass items to GalleryItem
-[ ] - import GalleryItem
+[x] - loop over data, make items
+[x] - pass items to GalleryItem
+[x] - import GalleryItem
 
 
 GalleryItem

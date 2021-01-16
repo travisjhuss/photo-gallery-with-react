@@ -23,7 +23,7 @@ GalleryList
 
 
 GalleryItem
-[ ] - Swap the image with the description on click. Use conditional rendering
+[x] - Swap the image with the description on click. Use conditional rendering
 [x] - Display the number likes for each item and include a like button
 [x] - When the like button is clicked, use Axios to update (PUT) the like count /gallery/like/:id
 [x] - Update the gallery each time a like button is clicked.

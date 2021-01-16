@@ -1,4 +1,5 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
+import { Grid, Paper } from '@material-ui/core';
 import './GalleryList.css';
 
 function GalleryList({ 
@@ -11,8 +12,10 @@ function GalleryList({
 
     return (
         <>
-            <h2>Morton J. Huss</h2>
-            <div className="container">
+            <Grid 
+                container 
+                id="photo-container"
+            >
                 {photoList.map(photo => (
                     <GalleryItem
                         key={photo.id}
@@ -21,7 +24,7 @@ function GalleryList({
                         deletePhoto={deletePhoto}
                     />
                 ))}
-            </div>
+            </Grid>
         </>
     );
 } // end GalleryList

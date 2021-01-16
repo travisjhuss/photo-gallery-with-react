@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from '@material-ui/core/Button';
+import { Button, Grid } from '@material-ui/core';
 import './GalleryItem.css';
 import { FavoriteBorder, DeleteOutlined } from '@material-ui/icons';
 
@@ -23,7 +23,7 @@ function GalleryItem({
 
     return (
         <>
-            <div className="gridItem">
+            <Grid item>
                 <div className="photoBox" onClick={onImgClick}>
                     {descriptionDisplayed
                         ? <img src={photo.path} />
@@ -53,7 +53,7 @@ function GalleryItem({
                 >
                     <DeleteOutlined />
                 </Button>
-            </div>
+            </Grid>
         </>
     )
 } // end GalleryItem

@@ -15,14 +15,15 @@
     margin-bottom: 4px;
     padding: 8px;
     width: 125px;
-    height: 47px;
+    height: 50px;
+    border: 1px solid white;
 }
 
 #url-input {
-    color: white;
+    background-color: white;
 }
 
 #description-input {
-    color: white;
+    background-color: white;
 }
 

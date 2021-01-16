@@ -5,10 +5,10 @@ import App from '../App/App';
 function Header() {
     return (
         <AppBar >
-            <Typography >
+            <Typography variant="h3">
                 My Best Friend, Morton.
             </Typography>
-            <Typography>
+            <Typography variant="subtitle1">
                 - A Life in Still Images
             </Typography>
         </AppBar>

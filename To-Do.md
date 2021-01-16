@@ -10,7 +10,7 @@ Set-Up
 [x] - gallery item component and css
 
 App
-[ ] - import axios
+[x] - import axios, useState, useEffect
 [ ] - axios.get gallery data
 [ ] - pass data to List component
 [ ] - import GalleryList

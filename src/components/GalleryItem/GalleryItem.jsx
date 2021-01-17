@@ -28,7 +28,7 @@ function GalleryItem({
                     <div id="photo-box" onClick={onImgClick}>
                     {descriptionDisplayed
                         ? <img src={photo.path} />
-                        : <span>{photo.description}</span>
+                        : <><img id="opacity" src={photo.path} /><div id="photo-desc">{photo.description}</div></>
                     }
                     </div>
                     <Button

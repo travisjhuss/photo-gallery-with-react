@@ -9,7 +9,7 @@ function GalleryItem({
     deletePhoto
 }) {
     const [descriptionDisplayed, setDescriptionDisplayed] = useState(true);
-
+    
     const onLike = () => {
         console.log('clicked Like');
         addLike(photo.id);

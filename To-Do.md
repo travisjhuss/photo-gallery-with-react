@@ -30,7 +30,7 @@ GalleryItem
 
 
 STRETCH GOALS
-[ ] - Use Git Branching for each feature 
+[x] - Use Git Branching for each feature 
 [x] - Move the data into a database (postgresql)
     [x] - name your database react_gallery
     [x] - include a database.sql file documenting your database tables
@@ -39,9 +39,9 @@ STRETCH GOALS
     [x] - Client side form (use absolute URL for images)
     [x] - Server side route for posting an image
 [x] - Ability to delete a gallery item
-[ ] - Add styling with Material-UI
-    [ ] - npm install @material-ui/core
-    [ ] - npm install @material-ui/icons
+[x] - Add styling with Material-UI
+    [x] - npm install @material-ui/core
+    [x] - npm install @material-ui/icons
 [ ] - Implement uppy for image upload
 
 NOTE: The above stretch goals are intended to be completed in order.

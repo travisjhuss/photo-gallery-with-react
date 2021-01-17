@@ -40,7 +40,7 @@ router.get('/', (req, res) => {
 // PUT route for database
 router.put('/like/:id', (req, res) => {
     const galleryId = req.params.id;
-    console.log('Delete route with id of', galleryId);
+    console.log('Put route with id of', galleryId);
     const query = `
         UPDATE "gallery" 
         SET "likes" = "likes" + 1

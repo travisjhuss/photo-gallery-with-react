@@ -55,6 +55,7 @@ function App() {
     })
   } // end addPhoto
 
+  // DELETE by ID
   const deletePhoto = (id) => {
     console.log('clicked delete');
     console.log('id:', id);

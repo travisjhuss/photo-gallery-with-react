@@ -23,7 +23,7 @@ function GalleryItem({
 
     return (
         <>
-            <Paper>
+            <Paper id="gallery-item">
                 <div id="photo-container">
                     <div id="photo-box" onClick={onImgClick}>
                     {descriptionDisplayed

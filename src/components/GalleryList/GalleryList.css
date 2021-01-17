@@ -1,10 +1,11 @@
 #list-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+    justify-content: space-evenly;
+    align-content: center;
     padding-bottom: 90px;
     padding-top: 110px;
-    row-gap: 10px;
+    /* row-gap: 10px; */
     background-color:  #3f50b5;
 }
 

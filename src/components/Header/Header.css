@@ -1,0 +1,17 @@
+#header {
+    background: rgb(122,113,50);
+    background: linear-gradient(90deg, rgba(122,113,50,1) 0%, rgba(163,146,97,1) 51%, rgba(82,78,27,1) 100%);
+}
+
+#title {
+    padding: 10px;
+    font-family: "Georgia";
+    color: rgb(254,253,249);
+}
+
+#subtitle {
+    padding-bottom: 5px;
+    font-family: "Georgia";
+    font-style: italic;
+    color: rgb(254,253,249);
+}

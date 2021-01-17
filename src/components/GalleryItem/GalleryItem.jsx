@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { Button, Paper, Typography } from '@material-ui/core';
 import './GalleryItem.css';
+import { FavoriteBorder, DeleteOutlined } from '@material-ui/icons';
 
 function GalleryItem({
     photo,
@@ -21,21 +23,40 @@ function GalleryItem({
 
     return (
         <>
-            <div className="gridItem">
-                <div className="photoBox" onClick={onImgClick}>
+            <Paper id="gallery-item">
+                <div id="photo-container">
+                    <div id="photo-box" onClick={onImgClick}>
                     {descriptionDisplayed
                         ? <img src={photo.path} />
-                        : <span>{photo.description}</span>
+                        : <><img id="opacity" src={photo.path} /><div id="photo-desc">{photo.description}</div></>
                     }
+                    </div>
+                    <Button
+                        id="like-btn"
+                        style={{
+                            fontSize: 12
+                        }}
+                        onClick={onLike}
+                        variant="contained"
+                    >
+                        <FavoriteBorder />
+                    </Button>
+                    
+                    <Typography
+                        id="like-counter"    
+                    >{photo.likes}</Typography>
+                    <Button
+                        id="delete-btn"
+                        style={{
+                            fontSize: 12
+                        }}
+                        onClick={() => deletePhoto(photo.id)}
+                        variant="contained"
+                    >
+                        <DeleteOutlined />
+                    </Button>
                 </div>
-                <div>
-                    <button onClick={onLike}>Like</button>
-                </div>
-                <div>
-                    {photo.likes}
-                </div>
-                <button onClick={() => deletePhoto(photo.id)}>Delete</button>
-            </div>
+            </Paper>
         </>
     )
 } // end GalleryItem

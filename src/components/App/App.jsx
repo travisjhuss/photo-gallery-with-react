@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
 import GalleryForm from '../GalleryForm/GalleryForm';
+import Header from '../Header/Header';
 import './App.css';
 
 function App() {
@@ -70,9 +71,7 @@ function App() {
   console.log('photoList:', photoList);
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="App-title">My Best Friend</h1>
-      </header>
+      <Header />
       <GalleryForm 
         addPhoto={addPhoto}
         photoDescription={photoDescription}

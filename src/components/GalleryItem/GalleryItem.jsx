@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, ButtonGroup, Grid, Paper, Typography } from '@material-ui/core';
+import { Button, Paper, Typography } from '@material-ui/core';
 import './GalleryItem.css';
 import { FavoriteBorder, DeleteOutlined } from '@material-ui/icons';
 
@@ -38,7 +38,6 @@ function GalleryItem({
                         }}
                         onClick={onLike}
                         variant="contained"
-                        color="primary"
                     >
                         <FavoriteBorder />
                     </Button>
@@ -53,7 +52,6 @@ function GalleryItem({
                         }}
                         onClick={() => deletePhoto(photo.id)}
                         variant="contained"
-                        color="primary"
                     >
                         <DeleteOutlined />
                     </Button>

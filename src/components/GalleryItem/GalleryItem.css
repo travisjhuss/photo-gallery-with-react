@@ -9,7 +9,7 @@
     border: 1px black solid;
     margin: 10px;
     padding-top: 12px;
-    background-color:  #3f50b5;
+    background: rgb(254,253,249);
 }
 
 img {
@@ -35,6 +35,8 @@ img {
     grid-row: 10 / span 1;
     z-index: 10;
     margin: 5px;
+    color: rgb(254,253,249);
+    background: rgb(122,113,50);
 }
     
 
@@ -43,6 +45,8 @@ img {
     grid-row: 10 / span 1;
     z-index: 9;
     margin: 5px;
+    color: rgb(254,253,249);
+    background: rgb(122,113,50);
 }
 
 #like-counter {
@@ -51,12 +55,14 @@ img {
     z-index: 9;
     text-align: center;
     font-size: 20px;
-    color: white;
+    font-family: "Georgia";
+    color: rgb(122,113,50);
     align-self: center;
 }
 
 #gallery-item {
     margin-bottom: 15px;
+    background: rgb(122,113,50);
 }
 
 #photo-desc {

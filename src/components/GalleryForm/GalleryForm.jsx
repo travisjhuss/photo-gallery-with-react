@@ -15,17 +15,18 @@ function GalleryForm({
         >
             <form className="input-form" onSubmit={addPhoto}>
                 <Typography
+                    id="add-text"
                     variant="h6"
                 >
                     Add a photo of your best friend...</Typography>
                 <TextField
                     label="Photo url:"
                     variant="filled"
+                    color="primary"
                     id="url-input"
                     placeholder="ex. images/photo.jpg"
                     margin="dense"
                     value={photoPath}
-                    color="primary"
                     onChange={e => setPhotoPath(e.target.value)}
                 />
                 <TextField
@@ -33,7 +34,6 @@ function GalleryForm({
                     variant="filled"
                     id="description-input"
                     margin="dense"
-                    color="primary"
                     value={photoDescription}
                     onChange={e => setPhotoDescription(e.target.value)}
                 />
@@ -41,7 +41,6 @@ function GalleryForm({
                     id="submit-btn"
                     type="submit"
                     variant="contained"
-                    color="primary"
                     onClick={addPhoto}
                 >
                     Submit

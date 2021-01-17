@@ -1,5 +1,5 @@
 import GalleryItem from '../GalleryItem/GalleryItem';
-import { Grid, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import './GalleryList.css';
 
 function GalleryList({ 
@@ -14,7 +14,7 @@ function GalleryList({
         <>
             <Grid 
                 container 
-                id="photo-container"
+                id="list-container"
             >
                 {photoList.map(photo => (
                     <GalleryItem

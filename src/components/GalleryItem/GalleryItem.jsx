@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Grid } from '@material-ui/core';
+import { Button, ButtonGroup, Grid, Paper, Typography } from '@material-ui/core';
 import './GalleryItem.css';
 import { FavoriteBorder, DeleteOutlined } from '@material-ui/icons';
 
@@ -23,37 +23,42 @@ function GalleryItem({
 
     return (
         <>
-            <Grid item>
-                <div className="photoBox" onClick={onImgClick}>
+            <Paper>
+                <div id="photo-container">
+                    <div id="photo-box" onClick={onImgClick}>
                     {descriptionDisplayed
                         ? <img src={photo.path} />
                         : <span>{photo.description}</span>
                     }
+                    </div>
+                    <Button
+                        id="like-btn"
+                        style={{
+                            fontSize: 12
+                        }}
+                        onClick={onLike}
+                        variant="contained"
+                        color="primary"
+                    >
+                        <FavoriteBorder />
+                    </Button>
+                    
+                    <Typography
+                        id="like-counter"    
+                    >{photo.likes}</Typography>
+                    <Button
+                        id="delete-btn"
+                        style={{
+                            fontSize: 12
+                        }}
+                        onClick={() => deletePhoto(photo.id)}
+                        variant="contained"
+                        color="primary"
+                    >
+                        <DeleteOutlined />
+                    </Button>
                 </div>
-                <Button
-                    style={{
-                        fontSize: 12
-                    }}
-                    onClick={onLike}
-                    variant="contained"
-                    color="primary" 
-                >
-                    <FavoriteBorder />
-                </Button>
-                <div>
-                    {photo.likes}
-                </div>
-                <Button
-                    style={{
-                        fontSize: 12
-                    }}
-                    onClick={() => deletePhoto(photo.id)}
-                    variant="contained"
-                    color="primary" 
-                >
-                    <DeleteOutlined />
-                </Button>
-            </Grid>
+            </Paper>
         </>
     )
 } // end GalleryItem

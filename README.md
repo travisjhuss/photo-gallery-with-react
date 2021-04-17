@@ -14,6 +14,11 @@ At that point I started watching some Material UI tutorials for the stretch goal
 
 Hope you enjoy getting to know my dog Morty!
 
+## Screen Shot
+
+### Home Page:
+![home](public/images/morty.png)
+
 ### Prerequisites
 
 Link to software that is required to install the app (e.g. node).
